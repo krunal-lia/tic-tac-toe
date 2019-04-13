@@ -67,7 +67,6 @@ h1 {
     flex-direction: row;
     flex-wrap: wrap;
     border-collapse: collapse;
-    max-width: 60%;
     width: 40%;
     margin: auto;
     margin-top: 10px;
@@ -126,4 +125,48 @@ h1 {
     position: absolute;
     top: 20%;
     right: 15%;
+}
+
+
+@media (max-width: 500px) {
+
+    body, html {
+        font-size: 12px;
+    }
+
+    .result {
+        width: 60%;
+        margin-left: 20%;
+        padding: 10px 15px;
+    }
+
+    .flex-box {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns .btn{
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .reload {
+       position: relative;
+       top: unset;
+       right: unset;
+       display: inline-block;
+       margin: 20px auto;
+       margin-left: 50%;
+       transform: translate(-50%);
+    }
+
+    .five {
+        height: 80px;
+    }
 }
